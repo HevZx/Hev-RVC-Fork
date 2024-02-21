@@ -1936,12 +1936,12 @@ def GradioSetup(UTheme=gr.themes.Soft()):
 
     default_weight = names[0] if names else '' 
 
-    with gr.Blocks(theme='JohnSmith9982/small_and_pretty', title="Applio") as app:
-        gr.Markdown("🍏 Applio (Mangio-RVC-Fork HF)")
-        gr.Markdown("More spaces: [Aesthetic_RVC_Inference_HF](https://huggingface.co/spaces/r3gm/Aesthetic_RVC_Inference_HF), [AICoverGen](https://huggingface.co/spaces/r3gm/AICoverGen), [Ultimate-Vocal-Remover-WebUI](https://huggingface.co/spaces/r3gm/Ultimate-Vocal-Remover-WebUI), [Advanced-RVC-Inference](https://huggingface.co/spaces/r3gm/Advanced-RVC-Inference)")
-        gr.HTML("<h4> The current space only uses CPU, so it's only for inference. If you have issues with the queue, I recommend duplicating the space. </h4>")
+    with gr.Blocks(theme='Hev832/orange', title="Hev") as app:
+        gr.Markdown("🔅 Hev (Mangio-RVC-Fork HF)")
+        gr.Markdown("More r3gm's spaces: [Aesthetic_RVC_Inference_HF](https://huggingface.co/spaces/r3gm/Aesthetic_RVC_Inference_HF), [AICoverGen](https://huggingface.co/spaces/r3gm/AICoverGen), [Ultimate-Vocal-Remover-WebUI](https://huggingface.co/spaces/r3gm/Ultimate-Vocal-Remover-WebUI), [Advanced-RVC-Inference](https://huggingface.co/spaces/r3gm/Advanced-RVC-Inference)")
+        gr.HTML("<h4> huggingface version here 🤗 (warning : in Huggingface this one use CPU not GPU, so in huggingface just for inference only)</h4>")
         gr.Markdown(
-            "[![Duplicate this Space](https://huggingface.co/datasets/huggingface/badges/raw/main/duplicate-this-space-sm-dark.svg)](https://huggingface.co/spaces/r3gm/RVC_HF?duplicate=true)\n\n"
+            "[![try this on Space 🤗](https://huggingface.co/spaces/AiHevenpen/RVC_HF)\n\n"
         )     
         with gr.Tabs():
             with gr.TabItem(i18n("Model Inference")):
