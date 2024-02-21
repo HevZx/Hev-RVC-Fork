@@ -1,13 +1,18 @@
-Hev RVC Fork
+# Hev RVC Fork
 
+
+colab comming soon
 
 
 feature :
 
 download youtube wav
+
 training
-extra features
-vowel separation
+
+extra feature
+
+vocal separation
 
 
 
