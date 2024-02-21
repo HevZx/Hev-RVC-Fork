@@ -1937,8 +1937,9 @@ def GradioSetup(UTheme=gr.themes.Soft()):
     default_weight = names[0] if names else '' 
 
 with gr.Blocks(theme="Hev832/orange", title="hev") as app:
-        gr.Markdown(" Hev (Mangio-RVC-Fork HF)")  
-       )     
+        gr.Markdown(" Hev (Mangio-RVC-Fork HF)") 
+    
+      )
         with gr.Tabs():
             with gr.TabItem(i18n("Model Inference")):
                 with gr.Row():
