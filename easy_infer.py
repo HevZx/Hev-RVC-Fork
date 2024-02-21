@@ -1394,5 +1394,5 @@ def get_edge_voice():
         tts_voice.append(formatted_entry)
     return tts_voice
 
-app.launch(share=True)
+
 #print(set_tts_voice)
