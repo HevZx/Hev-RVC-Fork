@@ -1936,7 +1936,7 @@ def GradioSetup(UTheme=gr.themes.Soft()):
 
     default_weight = names[0] if names else '' 
 
-    with gr.Blocks(theme='theme='Hev832/orange', title="hev") as app:
+   with gr.Blocks(theme="Hev832/orange", title="hev") as app:
         gr.Markdown(" Hev (Mangio-RVC-Fork HF)")  
        )     
         with gr.Tabs():
@@ -2026,7 +2026,7 @@ def GradioSetup(UTheme=gr.themes.Soft()):
                                     label=i18n(
                                         "Select the pitch extraction algorithm:"
                                     ),
-                                    choices=["pm", "harvest", "dio", "crepe", "crepe-tiny", "mangio-crepe", "mangio-crepe-tiny", "rmvpe", "rmvpe+"], 
+                                    choices=["dio", "crepe", "crepe-tiny", "mangio-crepe", "rmvpe", "rmvpe+"], 
                                     value="rmvpe+",
                                     interactive=True,
                                 )
