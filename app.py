@@ -1938,10 +1938,10 @@ def GradioSetup(UTheme=gr.themes.Soft()):
 
     with gr.Blocks(theme='Hev832/orange', title="Hev") as app:
         gr.Markdown("🔅 Hev (Mangio-RVC-Fork HF)")
-        gr.Markdown("More r3gm's spaces: [Aesthetic_RVC_Inference_HF](https://huggingface.co/spaces/r3gm/Aesthetic_RVC_Inference_HF), [AICoverGen](https://huggingface.co/spaces/r3gm/AICoverGen), [Ultimate-Vocal-Remover-WebUI](https://huggingface.co/spaces/r3gm/Ultimate-Vocal-Remover-WebUI), [Advanced-RVC-Inference](https://huggingface.co/spaces/r3gm/Advanced-RVC-Inference)")
+        gr.Markdown("r3gm's spaces: [Aesthetic_RVC_Inference_HF](https://huggingface.co/spaces/r3gm/Aesthetic_RVC_Inference_HF), [AICoverGen](https://huggingface.co/spaces/r3gm/AICoverGen), [Ultimate-Vocal-Remover-WebUI](https://huggingface.co/spaces/r3gm/Ultimate-Vocal-Remover-WebUI), [Advanced-RVC-Inference](https://huggingface.co/spaces/r3gm/Advanced-RVC-Inference)")
         gr.HTML("<h4> huggingface version here 🤗 (warning : in Huggingface this one use CPU not GPU, so in huggingface just for inference only)</h4>")
         gr.Markdown(
-            "[![try this on Space 🤗](https://huggingface.co/spaces/AiHevenpen/RVC_HF)\n\n"
+            "[try this on Space 🤗](https://huggingface.co/spaces/AiHevenpen/RVC_HF)\n\n"
         )     
         with gr.Tabs():
             with gr.TabItem(i18n("Model Inference")):
@@ -3140,7 +3140,7 @@ def GradioRun(app):
         config.iscolab or config.paperspace
     ):  
         app.queue(concurrency_count=concurrency_count, max_size=max_size).launch(
-        favicon_path="./images/icon.png", share=True
+        share=True
         )
     else:
         app.queue(concurrency_count=concurrency_count, max_size=max_size).launch(
