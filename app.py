@@ -3140,7 +3140,7 @@ def GradioRun(app):
         config.iscolab or config.paperspace
     ):  
         app.queue(concurrency_count=concurrency_count, max_size=max_size).launch(
-        favicon_path="./images/icon.png",
+        favicon_path="./images/icon.png", share=True
         )
     else:
         app.queue(concurrency_count=concurrency_count, max_size=max_size).launch(
